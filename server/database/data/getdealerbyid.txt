@@ -1,0 +1,2 @@
+curl -X GET "https://nehajsawarka-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/fetchDealer/4"
+{"_id":"6a71aad779d5ae13f4871ab5","id":4,"city":"Dallas","state":"Texas","address":"85800 Hazelcrest Circle","zip":"75241","lat":"32.6722","long":"-96.7774","short_name":"Solarbreeze","full_name":"Solarbreeze Car Dealership","__v":0}
