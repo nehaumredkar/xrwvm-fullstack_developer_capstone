@@ -31,8 +31,8 @@ const Dealer = () => {
     const retobj = await res.json();
     
     if(retobj.status === 200) {
-      let dealerobjs = Array.from(retobj.dealer)
-      setDealer(dealerobjs[0])
+    //   let dealerobjs = Array.from(retobj.dealer)
+      setDealer(retobj.dealer)
     }
   }
 
@@ -40,9 +40,10 @@ const Dealer = () => {
     const res = await fetch(reviews_url, {
       method: "GET"
     });
+    console.log('res: ', res)
     const retobj = await res.json();
     
-    if(retobj.status === 200) {
+    if(retobj.status === 200) {        
       if(retobj.reviews.length > 0){
         setReviews(retobj.reviews)
       } else {
@@ -71,8 +72,8 @@ return(
   <div style={{margin:"20px"}}>
       <Header/>
       <div style={{marginTop:"10px"}}>
-      <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
-      <h4  style={{color:"grey"}}>{dealer['city']},{dealer['address']}, Zip - {dealer['zip']}, {dealer['state']} </h4>
+      <h1 style={{color:"grey"}}>{dealer && dealer.full_name}{postReview}</h1>
+      <h4  style={{color:"grey"}}>{dealer && dealer['city']},{dealer && dealer['address']}, Zip - {dealer && dealer['zip']}, {dealer && dealer['state']} </h4>
       </div>
       <div class="reviews_panel">
       {reviews.length === 0 && unreviewed === false ? (
