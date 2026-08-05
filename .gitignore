@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Django virtual environment
+djangoenv/
+server/djangoenv/
+
+# Django collected static files
+server/static/
