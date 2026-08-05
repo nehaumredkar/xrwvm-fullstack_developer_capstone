@@ -1,0 +1,32 @@
+gh run view 29645889797 --verbose
+
+✓ main Running Copilot Code Review · 29645889797
+Triggered via dynamic about 17 days ago
+
+JOBS
+✓ copilot-pull-request-reviewer in 3m31s (ID 88083961718)
+  ✓ Set up job
+  ✓ Initialize
+  - Validate runner OS
+  - Validate firewall settings (Linux)
+  - Validate firewall settings (Windows)
+  ✓ Pre-cache Playwright MCP server in the background (Linux)
+  - Pre-cache Playwright MCP server in the background (Windows)
+  ✓ Prepare Copilot (Linux)
+  - Prepare Copilot (Windows)
+  ✓ Download Autofind (Linux)
+  - Download Autofind (Windows)
+  ✓ Generate agent firewall CA (Linux)
+  ✓ Start MCP Servers (Linux)
+  - Start MCP Servers (Windows)
+  ✓ Setup Agent (Linux)
+  - Setup Agent (Windows)
+  ✓ Processing Request (Linux)
+  - Processing Request (Windows)
+  ✓ Clean Up (Linux)
+  - Clean Up (Windows)
+  - [Optional] Archive Details
+  ✓ Complete job
+
+For more information about a job, try: gh run view --job=<job-id>
+View this run on GitHub: https://github.com/ibm-developer-skills-network/xrwvm-fullstack_developer_capstone/actions/runs/29645889797
